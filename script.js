@@ -48,4 +48,15 @@ function convert_to_morse_code(){
         output+=morsecode[input[i].toLowerCase()];
     }
     document.getElementById("output_text").innerHTML=output;
+    document.getElementById("copybutton").hidden=false;
+}
+
+function copytext(){
+    text=""
+    for(i in output){
+        if(output[i]=="." || output[i]=="-"){
+            text+=output[i];
+        }
+    }
+    navigator.clipboard.writeText(text);
 }

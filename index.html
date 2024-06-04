@@ -12,16 +12,15 @@
   <h1>
     Sam's Morse Code Converter
   </h1>
-  <label for="userinput">
-    Enter text here
-  </label>
-  <input type="text" id="userinput" name="userinput">
-  <button onclick="convert_to_morse_code()">button</button>
+  <input type="text" id="userinput" placeholder="Enter text here">
+  <button onclick="convert_to_morse_code()">Convert to morse mode</button>
   <br>
   <br>
-  <b id="output_text">
+  <b style="font-size: 20px" id="output_text">
     Output will show up here.
   </b>
+  <br>
+  <button hidden id="copybutton" onclick="copytext()">Copy text to clipboard</button>
   <script src="script.js"></script>
 </body>
 
