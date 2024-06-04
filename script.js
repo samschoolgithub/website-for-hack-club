@@ -54,7 +54,7 @@ function convert_to_morse_code(){
 function copytext(){
     text=""
     for(i in output){
-        if(output[i]=="." || output[i]=="-"){
+        if(output[i]=="." || output[i]=="-" || output[i]==" "){
             text+=output[i];
         }
     }
